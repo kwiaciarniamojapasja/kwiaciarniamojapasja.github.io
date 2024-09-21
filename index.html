@@ -3,30 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
+    <title>Kwiaciarnia Moja Pasja</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Witamy na mojej stronie!</h1>
+
+    <!-- Nagłówek strony -->
+    <header class="main-header">
+        <h1>Kwiaciarnia Moja Pasja</h1>
+        <p>Tworzymy piękno z kwiatów</p>
     </header>
 
-    <section>
-        <h2>O mnie</h2>
-        <p>Cześć! Jestem początkującym twórcą stron internetowych. Na tej stronie znajdziesz informacje o moich projektach i zainteresowaniach.</p>
+    <!-- Sekcja o kwiaciarni -->
+    <section class="about-us">
+        <h2>O nas</h2>
+        <p>„Moja Pasja” to kwiaciarnia z sercem, gdzie pasja do kwiatów spotyka się z artystyczną wizją. Tworzymy wyjątkowe kompozycje, które zachwycą każdego!</p>
     </section>
 
-    <section>
-        <h2>Projekty</h2>
-        <ul>
-            <li><a href="#">Projekt 1</a></li>
-            <li><a href="#">Projekt 2</a></li>
-            <li><a href="#">Projekt 3</a></li>
-        </ul>
+    <!-- Galeria kwiatów -->
+    <section class="gallery">
+        <h2>Nasze Kompozycje</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/flower1.jpg" alt="Bukiet róż" />
+                <p>Bukiet Róż</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/flower2.jpg" alt="Kompozycja w wazonie" />
+                <p>Kompozycja w wazonie</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/flower3.jpg" alt="Dekoracja ślubna" />
+                <p>Dekoracja Ślubna</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/flower4.jpg" alt="Kwiaty doniczkowe" />
+                <p>Kwiaty Doniczkowe</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2024 Moja Strona. Wszystkie prawa zastrzeżone.</p>
+    <!-- Formularz kontaktowy -->
+    <section class="contact">
+        <h2>Skontaktuj się z nami</h2>
+        <form action="#" method="post">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <!-- Stopka strony -->
+    <footer class="footer">
+        <p>© 2024 Kwiaciarnia Moja Pasja. Wszystkie prawa zastrzeżone.</p>
     </footer>
+
 </body>
 </html>
